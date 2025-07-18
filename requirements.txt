@@ -10,3 +10,6 @@ mlflow
 
 # --- Dépendances pour l'API ---
 flask
+
+# --- Compatible Render ---
+gunicorn
