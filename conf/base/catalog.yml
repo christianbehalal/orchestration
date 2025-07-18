@@ -1,0 +1,36 @@
+# Donnée brute d'entrée
+titanic:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/titanic.csv
+
+# Données intermédiaires (après preprocessing)
+X_train:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/X_train.parquet
+
+X_test:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/X_test.parquet
+
+y_train:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/y_train.parquet
+
+y_test:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/y_test.parquet
+
+# Modèle sauvegardé
+model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/model.pkl
+
+# Facultatif : métrique d’évaluation sauvegardée (peut être supprimée si non utilisée)
+accuracy:
+  type: text.TextDataset
+  filepath: data/08_reporting/accuracy.txt
+
+# Résultat enrichi : toutes les colonnes + y_true + y_pred
+predictions_vs_truth:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/predictions_vs_truth.csv

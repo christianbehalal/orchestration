@@ -1,0 +1,12 @@
+# --- Dépendances Kedro / Data science ---
+ipython>=8.10
+jupyterlab>=3.0
+kedro~=0.19.14
+notebook
+kedro-datasets[pandas]>=1.0.0,<2.0.0
+pandas
+scikit-learn
+mlflow
+
+# --- Dépendances pour l'API ---
+flask
