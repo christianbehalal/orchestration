@@ -6,7 +6,6 @@ notebook
 kedro-datasets[pandas]>=1.0.0,<2.0.0
 pandas
 scikit-learn
-mlflow
 
 # --- Dépendances pour l'API ---
 flask
@@ -15,3 +14,4 @@ flask
 # lxml
 # pyodbc
 # pyarrow
+# mlflow  # ❗ temporairement désactivé pour éviter le build failure sur Render
