@@ -11,5 +11,7 @@ mlflow
 # --- Dépendances pour l'API ---
 flask
 
-# --- Compatible Render ---
-gunicorn
+# --- Éviter les packages problématiques pour Render ---
+# lxml
+# pyodbc
+# pyarrow
